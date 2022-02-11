@@ -6,12 +6,12 @@ int mer = int.Parse(Console.ReadLine());
 
 void D2(int ax, int ay, int bx, int by)
 {
-    Console.WriteLine("Расстояние от точки а до точки b: " + Math.Sqrt((bx - ax)^2 + (by - ay)^2));
+    Console.WriteLine("Расстояние от точки а до точки b: " + Math.Sqrt(Math.Pow((bx - ax), 2) + Math.Pow((by - ay), 2)));
 }
 
 void D3(int ax, int ay, int bx, int by, int az, int bz)
 {
-    Console.WriteLine("Расстояние от точки а до точки b: " + Math.Sqrt((bx - ax)^2 + (by - ay)^2 + (bz - az)^2));
+    Console.WriteLine("Расстояние от точки а до точки b: " + Math.Sqrt(Math.Pow((bx - ax), 2) + Math.Pow((by - ay), 2) + Math.Pow((bz - az),2)));
 }
 
 if (mer != 2 && mer != 3) Console.WriteLine("Неверный входной параметр!");
